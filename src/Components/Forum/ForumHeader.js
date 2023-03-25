@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function ForumHeader() {
     return (
         <div className="ForumHeader">
