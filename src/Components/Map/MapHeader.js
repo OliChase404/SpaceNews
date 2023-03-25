@@ -2,7 +2,7 @@ import React from "react";
 
 function MapHeader() {
     return (
-        <div className="Map">
+        <div className="MapHeader">
             <h2>Map Header</h2>
         </div>
     )

@@ -5,6 +5,7 @@ import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
 import Home from "./Home/Home";
 import Forum from "./Forum/Forum";
+import Map from "./Map/Map";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/forum" element={<Forum />} />
+
+        <Route path="/map" element={<Map />} />
       </Routes>
       <Footer />
     </div>
