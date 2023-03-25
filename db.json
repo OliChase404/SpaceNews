@@ -11,6 +11,42 @@
       "content": "Dummy Thread",
       "author": "Dummy Author",
       "id": 2
+    },
+    {
+      "title": "Another test",
+      "content": "This is silly",
+      "author": "silly space dude",
+      "id": 3
+    },
+    {
+      "title": "Another test",
+      "content": "Testing away",
+      "author": "oh my",
+      "id": 4
+    },
+    {
+      "title": "din",
+      "content": "din din",
+      "author": "dingo",
+      "id": 5
+    },
+    {
+      "title": "Hello",
+      "content": "Hello again",
+      "author": "Nope",
+      "id": 6
+    },
+    {
+      "title": "again",
+      "content": "eieieieieiei",
+      "author": "agaadf",
+      "id": 7
+    },
+    {
+      "title": "qwerty",
+      "content": "adsfkjahfgdlkuhsiuhiauhidsuhfidsuh\ndsuihd\nsdfa\nd\ndf\nd\ndafsdfasdfasasdfdkj sdkjig adshgi oit \nij",
+      "author": "rieurieurieuriuee",
+      "id": 8
     }
   ],
   "comments": [
