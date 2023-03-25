@@ -3,14 +3,22 @@
     {
       "id": 1,
       "title": "json-server",
+      "content": "example of a forum post",
       "author": "typicode"
+    },
+    {
+      "title": "Dummy Title",
+      "content": "Dummy Thread",
+      "author": "Dummy Author",
+      "id": 2
     }
   ],
   "comments": [
     {
       "id": 1,
       "body": "some comment",
-      "postId": 1
+      "postId": 1,
+      "commenter": "Joe Shmoe"
     }
   ],
   "profile": {
