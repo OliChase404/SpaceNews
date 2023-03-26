@@ -27,13 +27,12 @@ const CurrentIss = () => {
 
     useEffect(() => {
         fetchIssData();
-        const intervalId = setInterval(fetchIssData, 10000);
+        const intervalId = setInterval(fetchIssData, 20000);
         return () => clearInterval(intervalId);
     }, []);
 
     const handleMapApiLoad = () => {
         setIsMapsApiLoaded(true);
-        fetchIssData();
     };
 
     if (!position || !timestamp) {
