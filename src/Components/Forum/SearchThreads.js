@@ -20,20 +20,22 @@ function SearchThreads({ onSearch }) {
             <h3>Search The Forum by Title or Content</h3>
             <form onSubmit={handleSearch}>
                 <input
+                    className="custom-placeholder"
                     type="text"
                     placeholder="Search Title"
                     value={searchTitleTerm}
                     onChange={(event) => setSearchTitleTerm(event.target.value)}
                 />
-                <button onClick={(event) => handleSearch(event, "title")} type="submit">Search Title</button>
+                    <button className="FormButton" onClick={(event) => handleSearch(event, "title")} type="submit">Search Title</button>
                 <input
+                    className="custom-placeholder"
                     type="text"
                     placeholder="Search Content"
                     value={searchContentTerm}
                     onChange={(event) => setSearchContentTerm(event.target.value)}
                 />
-                <button onClick={(event) => handleSearch(event, "content")} type="submit">Search Content</button>
-            </form>
+                    <button className="FormButton" onClick={(event) => handleSearch(event, "content")} type="submit">Search Content</button>
+                </form>
         </div>
     )
 }

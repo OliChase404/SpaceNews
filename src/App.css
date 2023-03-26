@@ -8,7 +8,9 @@
 
   /* position: relative; */
 }
-
+.custom-placeholder::placeholder {
+  font-family: 'Jura', sans-serif;
+}
 .NavBar{
   font-family: 'Orbitron', sans-serif;
   position: fixed;
@@ -123,6 +125,22 @@
   min-width: 50px;
 }
 
+.FormButton{
+  background: linear-gradient(to right, rgb(61, 61, 61), gray);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  border: 2px solid white;
+  padding: 10px;
+  font-family: 'Jura', sans-serif;
+}
+.FormButton:hover {
+  background: linear-gradient(to right, rgb(88, 88, 88), rgb(240, 239, 239));
+  cursor: pointer;
+}
+
 .ForumContent {
   display: flex;
   flex-direction: row;
@@ -150,8 +168,7 @@
 }
 
 .NewThreadForm input,
-.newThreadForm textarea,
-.newThreadForm button {
+.newThreadForm textarea {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
@@ -163,8 +180,7 @@
   min-width: 300px
 }
 
-.SearchThreads input,
-.SearchThreads button {
+.SearchThreads input {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
@@ -173,6 +189,7 @@
 }
 .Thread {
   border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.582);
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -183,7 +200,6 @@
 .MapContainer{
   height: 80vh;
 }
-
 .Map {
   background-image: url('../Assets/a5wtgpaazfm91.jpg');
   background-repeat: no-repeat;
@@ -191,14 +207,12 @@
   background-size: cover;
   height: 100vh;
 }
-
 .MapHeader {
   margin-bottom: 2vh;
   padding: 15px;
   font-weight: bold;
   text-shadow: 2px 2px 4px black;
 }
-
 .CurrentIss {
   display: flex;
   flex-direction: column;
@@ -262,8 +276,6 @@
   background-color: brown;
   color: white;
 }
-
-
 .RoverImageCard{
   display: flex;
   flex-wrap: wrap;

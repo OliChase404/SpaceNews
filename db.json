@@ -41,6 +41,13 @@
       "author": "James Doohan",
       "id": 6,
       "posted_on": "4/1/1996"
+    },
+    {
+      "title": "Here's a test",
+      "content": "This is testing text",
+      "author": "Wally",
+      "posted_on": "3/29/2023, 7:14:08 PM",
+      "id": 7
     }
   ],
   "comments": [

@@ -21,24 +21,27 @@ function NewThreadForm({ onThreadSubmit }) {
             <h4>Please keep all content space-related</h4>
             <form onSubmit={handleSubmit}>
                 <input
+                    className="custom-placeholder"
                     type="text"
                     placeholder="Title"
                     value={title}
                     onChange={(event) => setTitle(event.target.value)}
                 />
                 <input
+                    className="custom-placeholder"
                     type="text"
                     placeholder="Author"
                     value={author}
                     onChange={(event) => setAuthor(event.target.value)}
                 />
                 <textarea
+                    className="custom-placeholder"
                     placeholder="What would you like to say?"
                     value={content}
                     onChange={(event) => setContent(event.target.value)}
                 />
                 <div>
-                    <button type="submit">Submit</button>
+                    <button className="FormButton" type="submit">Submit</button>
                 </div>
             </form>
         </div>

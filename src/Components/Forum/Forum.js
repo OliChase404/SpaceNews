@@ -64,9 +64,11 @@ function Forum(){
               <div className="ForumLeftColumn">
                 <NewThreadForm onThreadSubmit={handleThreadSubmit} />
                 <SearchThreads onSearch={handleSearch} />
-                <button onClick={() => setSearchTerm("")} className="ClearSearch">
-                  Clear Search
-                </button>
+                <div>
+                  <button className="FormButton" onClick={() => setSearchTerm("")}>
+                    Clear Search
+                  </button>
+                </div>
               </div>
               <div className="ForumRightColumn">
                 <ThreadList posts={filteredPosts} comments={comments} />
