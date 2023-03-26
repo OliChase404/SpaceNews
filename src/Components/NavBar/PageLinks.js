@@ -8,6 +8,7 @@ function PageLinks(){
             <Link className="PageLinks" to='/'>Home</Link>
             <Link className="PageLinks" to='/forum'>Forum</Link>
             <Link className="PageLinks" to='/map'>ISS Tracker</Link>
+            <Link className="PageLinks" to='/marsgallery'>Mars Gallery</Link>
         </span>
     )
 }
