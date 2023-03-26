@@ -7,7 +7,8 @@ function NewThreadForm({ onThreadSubmit }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const newThread = { title, content, author };
+        const posted_on = new Date().toLocaleString();
+        const newThread = { title, content, author, posted_on };
         onThreadSubmit(newThread);
         setTitle("");
         setContent("");

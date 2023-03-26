@@ -5,8 +5,8 @@ function NavBar(){
 
     return(
         <div className="NavBar">
-            <h1 className="NavBarHeadings">Space News</h1>
-            <h2 className="NavBarHeadings">The Spaciest News</h2>
+            <h1 className="NavBarHeadings">Space "News"</h1>
+            <h2 className="NavBarHeadings">The Spaciest News Site (With Limited Actual News)</h2>
             <PageLinks  />
         </div>
     )

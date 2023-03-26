@@ -2,51 +2,45 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "content": "example of a forum post",
-      "author": "typicode"
+      "title": "I Am Not Spock",
+      "content": "The truth is, I've never been comfortable being thought of as Spock. It's difficult to have a character as part of your life as Spock has been and not be identified with him. But I've never been Spock, and I don't believe I am Spock. I've always been Leonard Nimoy. I've never been chased by Klingons, I've never been in a fistfight with a crew member, and I've never been in the engine room trying to get the dilithium crystals working. People assume that I am Spock, but I am an actor, and I play a role.",
+      "author": "Leonard Nimoy",
+      "posted_on": "11/15/1975"
     },
     {
-      "title": "Dummy Title",
-      "content": "Dummy Thread",
-      "author": "Dummy Author",
-      "id": 2
+      "title": "Star Trek Memories",
+      "content": "Playing Captain Kirk was an absolute delight for me. He was a character with a lot of depth, and it was a real challenge to try and bring all of that out. But he was also a lot of fun to play, because he was such a swashbuckling, romantic figure. Kirk was a man of action, and I loved getting to do all of those great fight scenes and stunts. The role was a dream come true for me, and it's been an honor to be associated with such an iconic character.",
+      "author": "William Shatner",
+      "id": 2,
+      "posted_on": "10/28/1993"
     },
     {
-      "title": "Another test",
-      "content": "This is silly",
-      "author": "silly space dude",
-      "id": 3
+      "title": "Beyond Uhura: Star Trek and the Other Memories",
+      "content": "Star Trek was an incredible experience for me. It allowed me to be a part of something truly groundbreaking and to help change the face of television. But it also gave me the chance to show that women of color could be strong, intelligent, and beautiful, and that's something I'm very proud of. Uhura was a trailblazer in her own right, and I feel honored to have played her and to have inspired so many people with her character.",
+      "author": "Nichelle Nichols",
+      "id": 3,
+      "posted_on": "9/1/1994"
     },
     {
-      "title": "Another test",
-      "content": "Testing away",
-      "author": "oh my",
-      "id": 4
+      "title": "The Longest Trek: My Tour of the Galaxy",
+      "content": "Playing Dr. McCoy on Star Trek was an absolute joy for me. I loved the character's gruff exterior and his warmth underneath. He was a man of science and medicine, but he was also deeply compassionate and had a great sense of humor. It was a real privilege to bring that character to life and to work alongside such an incredibly talented cast and crew. Star Trek will always hold a special place in my heart, and I feel so grateful to have been a part of it.",
+      "author": "DeForest Kelley",
+      "id": 4,
+      "posted_on": "10/1/1991"
     },
     {
-      "title": "din",
-      "content": "din din",
-      "author": "dingo",
-      "id": 5
+      "title": "To The Stars",
+      "content": "Star Trek was a groundbreaking show in so many ways. It showed us a vision of the future where people of all races and cultures could work together, where differences were celebrated, not feared. Playing Sulu was an incredible experience for me, and I'm so proud to have been a part of a show that had such a positive impact on so many people. Star Trek has given me a platform to advocate for social justice and equality, and I will always be grateful for that.",
+      "author": "George Takei",
+      "id": 5,
+      "posted_on": "10/1/1994"
     },
     {
-      "title": "Hello",
-      "content": "Hello again",
-      "author": "Nope",
-      "id": 6
-    },
-    {
-      "title": "again",
-      "content": "eieieieieiei",
-      "author": "agaadf",
-      "id": 7
-    },
-    {
-      "title": "qwerty",
-      "content": "adsfkjahfgdlkuhsiuhiauhidsuhfidsuh\ndsuihd\nsdfa\nd\ndf\nd\ndafsdfasdfasasdfdkj sdkjig adshgi oit \nij",
-      "author": "rieurieurieuriuee",
-      "id": 8
+      "title": "Beam Me Up, Scotty: Star Trek's 'Scotty' in His Own Words",
+      "content": "Playing Scotty on Star Trek was one of the greatest experiences of my life. He was a man of action and a man of science, but he also had a great sense of humor and a big heart. It was a real challenge to bring all of those elements together, but it was also incredibly rewarding. Star Trek was such a special show, and I feel so blessed to have been a part of it. The fans have been incredibly supportive over the years, and I'm so grateful for their love and loyalty.",
+      "author": "James Doohan",
+      "id": 6,
+      "posted_on": "4/1/1996"
     }
   ],
   "comments": [

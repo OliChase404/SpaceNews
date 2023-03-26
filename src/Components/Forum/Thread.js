@@ -7,6 +7,7 @@ function Thread({ post, comments }) {
             <h3>{post.title}</h3>
             <h4>Author: {post.author}</h4>
             <p>{post.content}</p>
+            <p className="timestamp">Posted on: {post.posted_on}</p>
             {comments.map((comment) => (
                 <Comment key={comment.id} comment={comment} />
             ))}
