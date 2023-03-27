@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 function PageLinks(){
 
     return(
-        <span>
-            <Link to='/'>Home</Link>
+        <span className="PageLinksContainer">
+            <Link className="PageLinks" to='/'>Home</Link>
+            <Link className="PageLinks" to='/forum'>Forum</Link>
         </span>
     )
 }

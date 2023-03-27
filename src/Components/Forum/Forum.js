@@ -3,7 +3,7 @@ import React from "react";
 function Forum(){
 
     return (
-        <div>
+        <div className="Forum">
             This will be a Forum.
         </div>
     )
