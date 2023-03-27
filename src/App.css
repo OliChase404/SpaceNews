@@ -64,6 +64,8 @@
  background-color: rgba(0, 0, 0, 0.548);
  width: 50%;
  padding: 10px;
+ border: 1px solid rgba(137, 43, 226, 0.582);
+
 }
 
 .PicOfTheDay img{
