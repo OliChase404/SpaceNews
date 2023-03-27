@@ -6,8 +6,8 @@ function WelcomePage(){
 
     return(
         <div className="WelcomePage">
-            <PeopleInSpace />
             <PictureOfTheDay />
+            <PeopleInSpace />
         </div>
     )
 }
