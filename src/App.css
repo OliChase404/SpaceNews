@@ -172,6 +172,10 @@
   min-width: 50px;
 }
 
+.MapContainer{
+  height: 80vh;
+}
+
 .Map {
   background-image: url('../Assets/a5wtgpaazfm91.jpg');
   background-repeat: no-repeat;

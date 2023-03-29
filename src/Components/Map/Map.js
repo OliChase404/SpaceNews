@@ -4,7 +4,7 @@ import CurrentIss from "./CurrentIss";
 
 const Map = () => {
     return (
-        <div>
+        <div className="MapContainer">
             <MapHeader />
             <CurrentIss />
         </div>
