@@ -172,7 +172,85 @@
   min-width: 50px;
 }
 
+.RoverLinkCardsContainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+}
+.CuriosityLinkCard{
+  background-image: url('../Assets/Curiosity.jpeg');
+  background-repeat: no-repeat;
+  /* background-attachment:fixed ; */
+  background-size: cover;
+  width: 60vh;
+  height: 30vh;
+  text-shadow: 2px 2px 4px black;
+  margin: 1vmin;
+  cursor: pointer;
+}
+.OpportunityLinkCard{
+  background-image: url('../Assets/Opportunity.jpeg');
+  background-repeat: no-repeat;
+  /* background-attachment:fixed ; */
+  background-size: cover;
+  width: 60vh;
+  height: 30vh;
+  text-shadow: 2px 2px 4px black;
+  margin: 1vmin;
+  cursor: pointer;
+}
+.SpiritLinkCard{
+  background-image: url('../Assets/Spirit.jpg');
+  background-repeat: no-repeat;
+  /* background-attachment:fixed ; */
+  background-size: cover;
+  width: 60vh;
+  height: 30vh;
+  text-shadow: 2px 2px 4px black;
+  margin: 1vmin;
+  cursor: pointer;
+}
+
+.RoverGallery{
+  background-image: url('../Assets/mars_surface_dust.jpeg');
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+.RoverGallery input{
+  background-color: brown;
+  color: white;
+}
+
+
+.RoverImageCard{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin: 3vmin;
+  border: 4px solid rgba(255, 0, 0, 0.391);
+  background-color: rgba(226, 43, 43, 0.166);
+}
+.RoverImageCard img{
+  cursor: pointer;
+  width: 100%;
+}
+.RoverImageCard ul{
+  list-style: none;
+  text-align: left;
+}
+.RoverImageCard p{
+  cursor: pointer;
+}
 
 
 
