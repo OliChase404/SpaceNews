@@ -5,6 +5,7 @@ import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
 import Home from "./Home/Home";
 import Forum from "./Forum/Forum";
+import Map from "./Map/Map";
 import MarsGallery from "./MarsGallery/MarsGallery";
 import Curiosity from "./MarsGallery/Curiosity";
 import Spirit from "./MarsGallery/Spirit";
@@ -17,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/forum" element={<Forum />} />
+
+        <Route path="/map" element={<Map />} />
         <Route path="/marsgallery" element={<MarsGallery />} />
         <Route path="/marsgallery/curiosity" element={<Curiosity /> } />
         <Route path="/marsgallery/spirit" element={<Spirit /> } />
