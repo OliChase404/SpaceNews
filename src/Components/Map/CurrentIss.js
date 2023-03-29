@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GoogleMap, Marker, MarkerF, LoadScript, Data } from "@react-google-maps/api";
+import { GoogleMap, MarkerF, LoadScriptNext } from "@react-google-maps/api";
 import { googleMapsApiKey } from "../../secret";
 
 const CurrentIss = () => {
@@ -7,9 +7,8 @@ const CurrentIss = () => {
     const [timestamp, setTimestamp] = useState(null);
     const [isMapsApiLoaded, setIsMapsApiLoaded] = useState(false);
 
-    useEffect(() => {
-        const fetchIssData = () => {
-            fetch("https://api.wheretheiss.at/v1/satellites/25544")
+    const fetchIssData = () => {
+        fetch("https://api.wheretheiss.at/v1/satellites/25544")
             .then((response) => {
                 if (response.ok) {
                     return response.json();
@@ -24,17 +23,17 @@ const CurrentIss = () => {
             .catch((error) => {
                 console.error("error fetching ISS data:", error);
             });
-        };
+    };
 
+    useEffect(() => {
         fetchIssData();
-
         const intervalId = setInterval(fetchIssData, 10000);
-
         return () => clearInterval(intervalId);
     }, []);
 
     const handleMapApiLoad = () => {
         setIsMapsApiLoaded(true);
+        fetchIssData();
     };
 
     if (!position || !timestamp) {
@@ -43,14 +42,13 @@ const CurrentIss = () => {
 
     return (
         <div className="CurrentIss">
-            <LoadScript googleMapsApiKey={googleMapsApiKey} onLoad={handleMapApiLoad}>
+            <LoadScriptNext googleMapsApiKey={googleMapsApiKey} onLoad={handleMapApiLoad}>
                 {isMapsApiLoaded && (
                 <GoogleMap
                     mapContainerStyle={{ width: `100%`, height: `400px` }}
                     center={position}
                     zoom={3}
                 >
-                    {/* <MarkerF position={position} /> */}
                     <MarkerF 
                         position={position}
                         icon={{
@@ -60,7 +58,7 @@ const CurrentIss = () => {
                     />
                 </GoogleMap>
                 )}
-            </LoadScript>
+            </LoadScriptNext>
             <div>Timestamp: {new Date(timestamp * 1000).toLocaleString()}</div>
         </div>
     );
