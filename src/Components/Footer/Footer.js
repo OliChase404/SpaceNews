@@ -4,7 +4,7 @@ function Footer(){
 
     return (
         <div className="Footer">
-            Footer, needs formatting and content
+            Footer, needs formatting and content.
         </div>
     )
 }

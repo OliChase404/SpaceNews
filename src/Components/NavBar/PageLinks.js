@@ -7,6 +7,7 @@ function PageLinks(){
         <span className="PageLinksContainer">
             <Link className="PageLinks" to='/'>Home</Link>
             <Link className="PageLinks" to='/forum'>Forum</Link>
+            <Link className="PageLinks" to='/marsgallery'>Mars Gallery</Link>
         </span>
     )
 }
