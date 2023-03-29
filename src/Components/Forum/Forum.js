@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ForumHeader from "./ForumHeader";
 import ThreadList from "./ThreadList";
+import NewThreadForm from "./NewThreadForm";
+import SearchThreads from "./SearchThreads";
 
 function Forum(){
     const [posts, setPosts] = useState([]);
@@ -36,21 +38,40 @@ function Forum(){
         })
     };
     
-    const handleSearch = (searchTerm) => {
-        setSearchTerm(searchTerm);
+    const handleSearch = ({ type, term }) => {
+        setSearchTerm({ type, term });
       };
     
-      const filteredPosts = posts.filter((post) =>
-        post.title.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+    const filteredPosts =
+      searchTerm.type === "title"
+        ? posts.filter((post) =>
+            post.title.toLowerCase().includes(searchTerm.term.toLowerCase())
+          )
+        : searchTerm.type === "content"
+        ? posts.filter((post) =>
+          post.content.toLowerCase().includes(searchTerm.term.toLowerCase())
+          )
+        : posts;
+
+      // const filteredPosts = posts.filter((post) =>
+      //   post.title.toLowerCase().includes(searchTerm.toLowerCase())
+      // );
 
       return (
         <div className="Forum">
-          <ForumHeader
-            onThreadSubmit={handleThreadSubmit}
-            onSearch={handleSearch}
-          />
-          <ThreadList posts={filteredPosts} comments={comments} />
+          <ForumHeader />
+            <div className="ForumContent">
+              <div className="ForumLeftColumn">
+                <NewThreadForm onThreadSubmit={handleThreadSubmit} />
+                <SearchThreads onSearch={handleSearch} />
+                <button onClick={() => setSearchTerm("")} className="ClearSearch">
+                  Clear Search
+                </button>
+              </div>
+              <div className="ForumRightColumn">
+                <ThreadList posts={filteredPosts} comments={comments} />
+              </div>
+            </div>
         </div>
       );    
 }

@@ -99,17 +99,78 @@
   padding: 3px;
 }
 
-
-
 .Forum{
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-image: url('../Assets/STScI-01G3HA1WWQ0B7VBRV531E7HRAWFlipped.png');
   background-repeat: no-repeat;
   background-attachment:fixed ;
   background-size:cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
+.ForumHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 10
+}
 
+.NewThreadForm {
+  width: 100%;
+  max-width: 300px;
+  min-width: 50px;
+}
+
+.ForumContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.ForumLeftColumn {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 1rem;
+  margin-left: 10rem;
+}
+
+.ForumRightColumn {
+  width: 70%;
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.ClearSearch {
+  margin-top: 1rem;
+  width: 30%;
+}
+
+.NewThreadForm input,
+.newThreadForm textarea,
+.newThreadForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  min-width: 200px
+}
+
+.NewThreadForm textarea {
+  min-height: 100px;
+  min-width: 300px
+}
+
+.SearchThreads input,
+.SearchThreads button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  max-width: 300px;
+  min-width: 50px;
+}
 
 
 
