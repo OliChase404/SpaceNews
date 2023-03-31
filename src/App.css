@@ -60,7 +60,7 @@
   background-repeat: no-repeat;
   background-attachment:fixed ;
   background-size: cover;
-  height: 100vh;
+  min-height: 150vh;
 }
 .HomeHeader{
   margin-bottom:2vh ;
