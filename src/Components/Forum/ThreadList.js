@@ -3,7 +3,7 @@
 import React from "react";
 import Thread from "./Thread";
 
-function ThreadList({ posts, comments }) {
+function ThreadList({ posts, comments, onDeleteThread }) {
     return (
         <div className="ThreadList">
             {posts.map((post) => (
@@ -11,6 +11,7 @@ function ThreadList({ posts, comments }) {
                     key={post.id}
                     post={post}
                     comments={comments.filter((comment) => comment.postID === post.id)}
+                    onDeleteThread={onDeleteThread}
                 />
             ))}
         </div>

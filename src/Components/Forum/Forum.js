@@ -55,6 +55,16 @@ function Forum(){
           )
         : posts;
 
+    const handleDeleteThread = (id) => {
+      fetch(`http://localhost:3001/posts/${id}`, {
+        method: "DELETE",
+      }).then((response) => {
+        if (response.ok) {
+          fetchData();
+        }
+      })
+    }
+
       // const filteredPosts = posts.filter((post) =>
       //   post.title.toLowerCase().includes(searchTerm.toLowerCase())
       // );
@@ -73,7 +83,10 @@ function Forum(){
                 </div>
               </div>
               <div className="ForumRightColumn">
-                <ThreadList posts={filteredPosts} comments={comments} />
+                <ThreadList 
+                  posts={filteredPosts}
+                  comments={comments}
+                  onDeleteThread={handleDeleteThread} />
               </div>
             </div>
         </div>
