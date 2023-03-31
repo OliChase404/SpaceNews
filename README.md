@@ -63,6 +63,11 @@ The Mars Gallery page contains three child components, each showing the complete
 * Opportunity
 * Spirit
 
+## Future Functionality and Unused Components
+You may notice throughout the components in the Forum folder that there are mentions and props referring to `comment`.  There's even a `Comment` component in that folder.  One of our nice-to-have stretch goals was to allow users to comment on existing threads.  This idea was shelved for MVP, but it's something we may explore in the future.
+
+As of first release (2023.03.31) there is no commenting functionality on this application.
+
 ## Contributing
 
 Feel free to fork and clone your own copy of this repository for your own purposes.  This project's creators intend to tweak and improve its functionality in the future.  Comments are welcome, but please do not attempt to alter our source  project's code or repository in any way.
@@ -74,5 +79,7 @@ Feel free to fork and clone your own copy of this repository for your own purpos
 [WhereTheIssAt](https://api.wheretheiss.at/v1/satellites/25544) (No API Key Required)
 
 [GoogleMaps](https://console.cloud.google.com/google/maps-apis/) (API Key Required for functionality)
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 This application was created and is owned by Oli Chase of Seattle, WA and Walter Pfingsten of Seattle, WA (2023)
