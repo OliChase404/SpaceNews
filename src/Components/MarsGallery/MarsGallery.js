@@ -5,7 +5,7 @@ function MarsGallery() {
   return (
     <div className="RoverLinkCardsContainer">
       <p>
-        View The Complete Image Databases From Three of Nasa's Most Successful
+        View The Complete Image Databases From Three of NASA's Most Successful
         Mars Rovers
       </p>
       <Link className="PageLinks" to="/marsgallery/curiosity">
