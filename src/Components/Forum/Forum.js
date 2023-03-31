@@ -1,3 +1,5 @@
+// NOTE: This component code includes variables, functions, & props related to Comment functionality on Thread posts that was not included for MVP
+
 import React, { useState, useEffect } from "react";
 import ForumHeader from "./ForumHeader";
 import ThreadList from "./ThreadList";
